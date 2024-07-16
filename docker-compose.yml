@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  jenkins:
+    build: .
+    environment:
+      - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/marvin.yml
+      - USER_CHOCOLATEEN_PASSWORD=chocolatine
+      - USER_VAUGIE_G_PASSWORD=chocolatine
+      - USER_I_DONT_KNOW_PASSWORD=chocolatine
+      - USER_NASSO_PASSWORD=chocolatine
+    ports:
+      - 5000:8080
+    volumes:
+      - ./configuration.yml:/var/jenkins_home/casc_configs/marvin.yml
