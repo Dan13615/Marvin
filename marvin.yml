@@ -57,12 +57,5 @@ jenkins:
                 - "Job/Workspace"
               assignement:
                 - "nasso"
-
-    loggedInUsersCanDoAnything:
-      allowAnonymousRead: false
 jobs:
   - file: /var/jenkins_home/job_dsl.groovy
-
-security:
-  globalJobDslSecurityConfiguration:
-    useScriptSecurity: false
