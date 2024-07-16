@@ -2,6 +2,7 @@ version: "3"
 
 services:
   jenkins:
+    privileged: true
     build: .
     environment:
       - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/marvin.yml
@@ -10,6 +11,7 @@ services:
       - USER_I_DONT_KNOW_PASSWORD=chocolatine
       - USER_NASSO_PASSWORD=chocolatine
     ports:
-      - 5000:8080
+      - 50000:50000
+      - 8080:8080
     volumes:
       - ./configuration.yml:/var/jenkins_home/casc_configs/marvin.yml
