@@ -1,7 +1,8 @@
-configuration-as-code:latest
-job-dsl:latest
-script-security:latest
-credentials:latest
-github:latest
-role-strategy:latest
-ws-cleanup:latest
+configuration-as-code
+credentials
+github
+job-dsl
+script-security
+structs
+role-strategy
+ws-cleanup

@@ -24,8 +24,8 @@ jenkins:
             description: "Marvin master"
             permissions:
               - "Overall/Administer"
-            assignments:
-              - "chocolateen"
+            entries:
+              - user: "chocolateen"
           - name: "ape"
             description: "Pedagogical team member"
             permissions:
@@ -33,8 +33,8 @@ jenkins:
               - "Job/Build"
               - "Job/Read"
               - "Job/Workspace"
-            assignments:
-              - "i_dont_know"
+            entries:
+              - user: "i_dont_know"
           - name: "gorilla"
             description: "Group Obsessively Researching Innovation Linked to Learning and Accomplishment"
             permissions:
@@ -46,16 +46,16 @@ jenkins:
               - "Job/Configure"
               - "Job/Delete"
               - "Job/Move"
-              - "Build/Cancel"
-            assignments:
-              - "vaugie_g"
+              - "Job/Cancel"
+            entries:
+              - user: "vaugie_g"
           - name: "assist"
             description: "Assistant"
             permissions:
               - "Overall/Read"
               - "Job/Read"
               - "Job/Workspace"
-            assignments:
-              - "nasso"
+            entries:
+              - user: "nasso"
 jobs:
   - file: /var/jenkins_home/job_dsl.groovy

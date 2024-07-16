@@ -14,9 +14,4 @@ services:
       - 50000:50000
       - 8080:8080
     volumes:
-      - jenkins_home:/var/jenkins_home
-      - ./my_marvin.yml:/var/jenkins_home/casc_configs/my_marvin.yaml
-      - ./job_dsl.groovy:/var/jenkins_home/job_dsl.groovy
-
-volumes:
-  jenkins_home:
+      - ./my_marvin.yml:/var/jenkins_home/casc_configs/my_marvin.yml
